@@ -1,4 +1,4 @@
---	Part – A 
+--	Part â€“ A 
 --1.	Retrieve all unique departments from the STUDENT table.
 	SELECT  DISTINCT STUDEPARTMENT
 	FROM STUDENT
@@ -88,7 +88,7 @@
 	SELECT * FROM ActiveEnrollments
 	DROP VIEW ActiveEnrollments
 
---18.	Retrieve the student’s name who is not enrol in any course using subquery. (STUDENT, ENROLLMENT TABLE)
+--18.	Retrieve the studentâ€™s name who is not enrol in any course using subquery. (STUDENT, ENROLLMENT TABLE)
 	SELECT STUNAME
 	FROM STUDENT
 	WHERE STUDENTID NOT IN (SELECT STUDENTID FROM ENROLLMENT)
@@ -98,7 +98,7 @@
 	FROM COURSE
 	WHERE COURSECREDITS < (SELECT MAX(COURSECREDITS) FROM COURSE)
 
---	Part – B 
+--	Part â€“ B 
 --20.	Retrieve all courses along with the total number of students enrolled. (COURSE, ENROLLMENT table)
 select COURSENAME,COUNT(STUDENTID) AS TOTAL_STUDENT
 FROM COURSE
@@ -121,7 +121,7 @@ ON Course_Assignment.FacultyID=FACULTY.FacultyID
 WHERE FacultyName='DR. SHETH'
 ORDER BY CourseCredits DESC;
 
---Part – C 
+--Part â€“ C 
 --23.	List all students who are enrolled in more than 3 courses. (STUDENT, ENROLLMENT table)
 
 SELECT STUNAME
