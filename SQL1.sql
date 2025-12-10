@@ -63,4 +63,5 @@ VALUES
 ('CS202',107,4,2024,'A-305'),
 ('CS302',101,6,2024,'B-401');
 
+
 select * from COURSE_ASSIGNMENT 
